@@ -51,7 +51,9 @@ a {
   left: 0;
   z-index: 11;
   padding: 10px 0 10px 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+          backdrop-filter: saturate(180%) blur(20px);
   font-family: "Inter";
   font-style: normal;
   font-size: 20px;
@@ -561,6 +563,8 @@ a {
 }
 @media (max-width: 1000px) and (max-width: 750px) {
   .header {
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
     width: 100%;
     position: fixed;
     top: 0;

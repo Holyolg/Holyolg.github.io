@@ -10,18 +10,19 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="shortcut icon" href="Group.svg" type="image/x-icon">
+	<link rel="icon" href="Group.svg" type="image/x-icon">
+
 	<title>Iphone 14 pro</title>
 </head>
 
 <body>
 	<div class="wrapper">
 
-		<header class="header">
+		<header id="header" class="header">
 			<div class="_container">
 
 				<nav id="myDropdown" class="header__nav-row">
-					<button class="header__menu-btn open-btn" onclick="myFunction()" type="button">
+					<button class="header__menu-btn open-btn" onclick="menuOpen()" type="button">
 						<span class="btn-line open-btn"></span>
 						<span class="btn-line open-btn"></span>
 						<span class="btn-line open-btn"></span>
@@ -34,7 +35,9 @@
 						<a data-goto=".purchase" href="#" class="header__item-text">Заказать</a>
 					</div>
 
-					<div class="header__item header__item-logo"><a href="#"><img class='logo' src="logo.png"></img></a>
+					<div class="header__item header__item-logo"><a href="#"><img class='logo' src="logo.png">
+						</a>
+						</a>
 					</div>
 					<div class="header__item item__phone header__item-phone"><a href="+38 050-456-56-56">+8
 							(800)
@@ -53,8 +56,9 @@
 			</div>
 
 			<img src="iphone_14_pro_finish_unselect_gallery_1_202209_GEO_US_removebg.png"
-				class="header__content-iphone __anim-items _anim-no-hide"></img>
-			<button data-goto=".pick-color" class="header__content-btn btn">ВЫБРАТЬ</button>
+				class="header__content-iphone __anim-items _anim-no-hide">
+			<>
+				<button data-goto=".pick-color" class="header__content-btn btn">ВЫБРАТЬ</button>
 		</div>
 		<section class="content">
 			<h2 class="content__text whats-new">ЧТО НОВОГО</h2>
@@ -156,8 +160,7 @@
 					<a href="" class="footer__item footer__link">Политика конфиденциальности</a>
 					<div class="footer__logo"><a href="#"><img src="logo.png" class="footer__img logo"></img></a>
 					</div>
-					<a href="+8 (800)
-						555-35-35" class="footer__item phone">+8 (800)
+					<a href="+38 050-456-56-56" class="footer__item phone">+8 (800)
 						555-35-35</a>
 				</div>
 			</div>
@@ -166,7 +169,7 @@
 
 	<script src="script.js"></script>
 	<script src="menu-script.js"></script>
-	<script src="from.js"></script>
+	<script src="form.js"></script>
 
 
 </body>

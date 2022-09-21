@@ -8,9 +8,15 @@ btn.addEventListener("click", function () {
   body.classList.toggle("lock");
 });
 */
-function myFunction() {
+document;
+/*Для блюра*/
+function menuOpen() {
+  /*переключатель  меню*/
   document.getElementById("myDropdown").classList.toggle("menu-open");
+  /*Запрет скролла*/
+  document.querySelector("body").classList.toggle("lock");
 }
+
 /*Закрытие при выборе*/
 window.onclick = function (e) {
   if (!e.target.matches(".open-btn")) {
