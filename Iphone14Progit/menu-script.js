@@ -1,28 +1,17 @@
-/*
-const btn = document.querySelector(".open-btn");
-const nav = document.querySelector(".header__nav-row");
-const body = document.querySelector("body");
-
-btn.addEventListener("click", function () {
-  nav.classList.toggle("menu-open");
-  body.classList.toggle("lock");
-});
-*/
-document;
-/*Для блюра*/
+let menu = document.getElementById("myDropdown");
+let bdy = document.querySelector("body");
+/*Меню-бургер*/
 function menuOpen() {
-  /*переключатель  меню*/
-  document.getElementById("myDropdown").classList.toggle("menu-open");
-  /*Запрет скролла*/
-  document.querySelector("body").classList.toggle("lock");
+  menu.classList.toggle("menu-open");
+  bdy.classList.toggle("lock");
 }
 
 /*Закрытие при выборе*/
 window.onclick = function (e) {
   if (!e.target.matches(".open-btn")) {
-    var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains("menu-open")) {
-      myDropdown.classList.remove("menu-open");
+    if (menu.classList.contains("menu-open")) {
+      menu.classList.remove("menu-open");
+      bdy.classList.remove("lock");
     }
   }
 };

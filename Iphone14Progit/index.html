@@ -11,6 +11,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="icon" href="Group.svg" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
 	<title>Iphone 14 pro</title>
 </head>
@@ -35,13 +36,13 @@
 						<a data-goto=".purchase" href="#" class="header__item-text">Заказать</a>
 					</div>
 
-					<div class="header__item header__item-logo"><a href="#"><img class='logo' src="logo.png">
-						</a>
-						</a>
+					<div class="header__item header__item-logo"><a href="#"><img class='logo' src="logo.svg"></img></a>
 					</div>
-					<div class="header__item item__phone header__item-phone"><a href="+38 050-456-56-56">+8
-							(800)
-							555-35-35</a>
+					<div class="header__item item__phone header__item-phone"><span><a class="phone" href="+8
+						(800)
+						555-35-35">+8
+								(800)
+								555-35-35</a></span>
 					</div>
 
 				</nav>
@@ -56,9 +57,8 @@
 			</div>
 
 			<img src="iphone_14_pro_finish_unselect_gallery_1_202209_GEO_US_removebg.png"
-				class="header__content-iphone __anim-items _anim-no-hide">
-			<>
-				<button data-goto=".pick-color" class="header__content-btn btn">ВЫБРАТЬ</button>
+				class="header__content-iphone __anim-items _anim-no-hide"></img>
+			<button data-goto=".pick-color" class="header__content-btn btn">ВЫБРАТЬ</button>
 		</div>
 		<section class="content">
 			<h2 class="content__text whats-new">ЧТО НОВОГО</h2>
@@ -111,24 +111,28 @@
 				<div class="content__raw">
 					<div class="box__items __anim-items _anim-no-hide">
 						<div class="box__item _anim-show ">
-							<div class="item__content image "><img src="silver 1.jpg" class="color__img "></img>
+							<div class="item__content image "><a class="popup-link" href="#popup_silver"><img
+										class="color__img popup__link" src="silver 1.jpg"></img></a>
 							</div>
 
 							<div class="item__title">Silver</div>
 							<div class="item__text">Серебристый</div>
 						</div>
 						<div class="box__item _anim-show">
-							<div class="item__content image"><img src="purple.jpg" class="color__img"></img></div>
+							<div class="item__content image"><a class="popup-link" href="#popup_purple"><img class="color__img"
+										src="purple.jpg"></img></a></div>
 							<div class="item__title">Deep purple</div>
 							<div class="item__text">Темно фиолетовый</div>
 						</div>
 						<div class="box__item _anim-show">
-							<div class="item__content image"><img src="голд.jpg" class="color__img"></img></div>
+							<div class="item__content image"><a class="popup-link" href="#popup_gold"><img class="color__img"
+										src="голд.jpg"></img></a></div>
 							<div class="item__title">Gold</div>
 							<div class="item__text">Золотой</div>
 						</div>
 						<div class="box__item _anim-show">
-							<div class="item__content image"><img src="black.jpg" class="color__img"></img></div>
+							<div class="item__content image"><a class="popup-link" href="#popup_black"><img class="color__img"
+										src="black.jpg"></img></a></div>
 							<div class="item__title">Space Black</div>
 							<div class="item__text">Космический черный</div>
 						</div>
@@ -157,16 +161,209 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="footer__items">
-					<a href="" class="footer__item footer__link">Политика конфиденциальности</a>
-					<div class="footer__logo"><a href="#"><img src="logo.png" class="footer__img logo"></img></a>
+					<div class="footer__item footer__link"><a href="" class="link">Политика конфиденциальности</a></div>
+					<div class="footer__logo"><a href="#"><img src="logo.svg" class="footer__img logo"></img></a>
 					</div>
-					<a href="+38 050-456-56-56" class="footer__item phone">+8 (800)
-						555-35-35</a>
+					<div class="footer__item footer__phone"><a href="+8 (800)
+											555-35-35" class="phone">+8 (800)
+							555-35-35</a></div>
 				</div>
 			</div>
 		</footer>
 	</div>
+	</div>
 
+	<div class="popup" id="popup_silver">
+		<div class="popup__body">
+			<div class="popup__content">
+				<a class="popup__close close-popup" href="##">x</a>
+				<!-- контейнер -->
+				<div class="image-slider swiper-container">
+					<!-- обязательная оболочка  -->
+
+					<div class="image-slider__wrapper swiper-wrapper">
+						<!-- слайды  -->
+
+						<div class="image-slider__slide swiper-slide">
+							<!-- контент  -->
+
+							<div class="image-slider__image">
+								<img src="silver-slide1.jpg" alt="">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="silver-slide2.jpg" alt="">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="silver-slide3.jpg" alt="">
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-pagination"></div>
+
+					<div class="popup__title">Iphone 14Pro Silver</div>
+					<div class="popup__text">Передняя панель Ceramic Shield <br>
+						Фактурное матовое стекло
+						на задней панели <br>
+						Корпус из нержавеющей стали <br>
+						Технология ProMotion с адаптивной частотой обновления до 120 Гц <br>
+						Поддержка HDR <br>
+						Технология True Tone <br>
+						Широкий цветовой охват (P3) <br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup" id="popup_purple">
+		<div class="popup__body">
+			<div class="popup__content">
+				<a class="popup__close close-popup" href="##">x</a>
+				<!-- контейнер -->
+				<div class="image-slider swiper-container">
+					<!-- обязательная оболочка  -->
+
+					<div class="image-slider__wrapper swiper-wrapper">
+						<!-- слайды  -->
+
+						<div class="image-slider__slide swiper-slide">
+							<!-- контент  -->
+
+							<div class="image-slider__image">
+								<img src="purple-slide.jpg" alt="">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="purple.slide2.jpg" alt="">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="purple-slide3.jpg" alt="">
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-pagination"></div>
+
+					<div class="popup__title">Iphone 14Pro Gold </div>
+					<div class="popup__text">Передняя панель Ceramic Shield <br>
+						Фактурное матовое стекло
+						на задней панели <br>
+						Корпус из нержавеющей стали <br>
+						Технология ProMotion с адаптивной частотой обновления до 120 Гц <br>
+						Поддержка HDR <br>
+						Технология True Tone <br>
+						Широкий цветовой охват (P3) <br></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup" id="popup_gold">
+		<div class="popup__body">
+			<div class="popup__content">
+				<a class="popup__close close-popup" href="##">x</a>
+				<!-- контейнер -->
+				<div class="image-slider swiper-container">
+					<!-- обязательная оболочка  -->
+
+					<div class="image-slider__wrapper swiper-wrapper">
+						<!-- слайды  -->
+
+						<div class="image-slider__slide swiper-slide">
+							<!-- контент  -->
+
+							<div class="image-slider__image">
+								<img src="gold-slide1.jpg" alt="">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="gold-slide2.jpg" alt="">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="gold-slide3.jpg" alt="">
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-pagination"></div>
+
+					<div class="popup__title">Iphone 14Pro</div>
+					<div class="popup__text">Передняя панель Ceramic Shield <br>
+						Фактурное матовое стекло
+						на задней панели <br>
+						Корпус из нержавеющей стали <br>
+						Технология ProMotion с адаптивной частотой обновления до 120 Гц <br>
+						Поддержка HDR <br>
+						Технология True Tone <br>
+						Широкий цветовой охват (P3) <br></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup" id="popup_black">
+		<div class="popup__body">
+			<div class="popup__content">
+				<a class="popup__close close-popup" href="##">x</a>
+				<!-- контейнер -->
+				<div class="image-slider swiper-container">
+					<!-- обязательная оболочка  -->
+
+					<div class="image-slider__wrapper swiper-wrapper">
+						<!-- слайды  -->
+
+						<div class="image-slider__slide swiper-slide">
+							<!-- контент  -->
+
+							<div class="image-slider__image swiper-slide">
+								<img src="space-black-slide.jpg" alt="">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="space-black-slide2.jpg" alt="">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="space-black-slide3.jpg" alt="">
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-pagination"></div>
+
+					<div class="popup__title">Iphone 14Pro Space Black</div>
+					<div class="popup__text">Передняя панель Ceramic Shield <br>
+						Фактурное матовое стекло
+						на задней панели <br>
+						Корпус из нержавеющей стали <br>
+						Технология ProMotion с адаптивной частотой обновления до 120 Гц <br>
+						Поддержка HDR <br>
+						Технология True Tone <br>
+						Широкий цветовой охват (P3) <br></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="script.js"></script>
 	<script src="menu-script.js"></script>
 	<script src="form.js"></script>
