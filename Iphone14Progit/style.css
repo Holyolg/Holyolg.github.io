@@ -344,7 +344,7 @@ body.lock {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5% 5%;
+  padding: 8% 5%;
   min-width: 0;
 }
 .popup__content {
@@ -358,9 +358,10 @@ body.lock {
   transform: translate(0px, -100%);
 }
 .popup__close {
+  font-size: 3.5vh;
   position: absolute;
   right: 15px;
-  top: 10px;
+  top: 5px;
   z-index: 2;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -368,12 +369,21 @@ body.lock {
   display: block;
   text-align: center;
   font-size: 3vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
   margin-bottom: 2vh;
 }
 .popup__text {
+  padding: 3vh;
+  font-size: 2vh;
   text-align: left;
-  padding: 0vh 2vh 2vh 2vh;
-  margin-bottom: 1vh;
+  font-weight: 400;
+  list-style-type: none;
+}
+
+li::marker {
+  display: none;
 }
 
 .popup.open {
@@ -400,13 +410,18 @@ body.lock {
      object-position: center;
 }
 
+.image-slider .swiper-button-prev,
+.image-slider .swiper-button-next {
+  z-index: 20;
+}
+
 .image-slider .swiper-button-prev::after,
 .image-slider .swiper-button-next::after {
   color: rgba(0, 0, 0, 0.7);
 }
 
 .image-slider .swiper-pagination {
-  margin-top: 1vh;
+  top: 14px;
 }
 
 .image-slider .swiper-pagination-bullet {
@@ -741,8 +756,12 @@ body.lock {
   .menu-open .btn-line:nth-child(4) {
     transform: scaleX(0);
   }
+  .popup__body {
+    padding: 10% 0%;
+  }
   .popup__content {
-    height: 84vh;
+    border-radius: 25px;
+    height: 75vh;
   }
   .popup__title {
     display: none;
@@ -756,7 +775,7 @@ body.lock {
        object-fit: cover;
   }
   .image-slider__image img {
-    height: 85vh;
+    height: 75vh;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 25px;

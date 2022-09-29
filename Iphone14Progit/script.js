@@ -169,7 +169,8 @@ new Swiper(".image-slider", {
   fadeEffect: {
     crossFade: true,
   },
+  loop: true,
+  observer: true,
+  observerParents: true,
+  observerSlideChildren: true,
 });
-observer: true;
-observerParents: true;
-observerSlideChildren: true;
